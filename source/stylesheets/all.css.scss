@@ -8,6 +8,7 @@ $mobile : new-breakpoint(max-width 767px);
 $medium-screen : new-breakpoint(min-width 768px max-width 1024px);
 $large-screen : new-breakpoint(min-width 1025px);
 
+
 * {
   outline: none;
 }
@@ -145,7 +146,7 @@ h1, h2, h3, h4, h5, h6 {
           color: #fff;
         }
       }
-      // img { float: left; }
+      img { width: 25px; height: 25px; vertical-align: middle;}
     }
   }  
 }
@@ -168,7 +169,7 @@ header {
     padding: 30rem 5rem;
   }
   @include media($medium-screen) {
-    padding: 20rem 5rem;
+    padding: 23rem 5rem;
   }
   h1 {
     font-family: 'Montserrat', sans-serif;
@@ -182,6 +183,9 @@ header {
       font-size: 24px;
       margin: 0 10px 0px 10px;
       padding: 10rem 0 0 0;
+    }
+    @include media($medium-screen) {
+      font-size: 36px;
     }
   }
   p {
@@ -288,7 +292,7 @@ section#theissue, section#thestigma, section#thesolution {
     line-height: 2em;
   }
   @include media($mobile) {
-    margin-top: 9rem;
+    margin-top: 3rem;
     h2 {
       font-size: 24px;
     }
@@ -328,9 +332,10 @@ iframe {
 }
 
 section#whatwedo {
-  overflow: auto;
+  height: 100%;
+  width: 100%;
   @include media($mobile) {
-    overflow-x: hidden;
+
   }
 }
 
@@ -358,7 +363,7 @@ section#whatwedo {
     font-size: 24px;
     line-height: 2em;
     @include media($mobile) {
-      font-size: 18px;
+      font-size: 16px;
       margin: 10px 10px 20px 10px;
     }  
   }
@@ -392,6 +397,8 @@ section#whatwedo {
       }
       p {
         margin: 10px;
+        font-size: 16px;
+        text-align: left;
       }
     }
   }
@@ -479,6 +486,12 @@ button.toggle {
   color: #FEC66D;
 }
 
+section#girlprofiles {
+  clear: both;
+  height: 100%;
+  width: 100%;
+}
+
 #abigael {
   background: url('../images/abigail-evelyn.jpg') no-repeat center center;
 }
@@ -497,18 +510,19 @@ button.toggle {
   position: relative;
   .profile {
     position: absolute;
+    line-height: 2em;
     @include media($large-screen) {
       bottom: 100px;
       left: 100px;      
     }
     @include media($medium-screen) {
-      bottom: 50px;
+      bottom: 75px;
       left: 50px;      
     }    
     @include span-columns(6);
     @include media($mobile) {
       @include span-columns(12 of 12);
-      bottom: 0;
+      bottom: 40px;
       left: 0;      
     }
     h2 {
@@ -537,6 +551,36 @@ button.toggle {
     } 
   }
 }
+
+.owl-carousel {
+  position: relative;
+  .owl-controls {
+    position: absolute;
+    top: 88%;
+    left: 8%;
+    @include media($medium-screen) {
+      left: 50px;
+      top: 600px;
+    }
+    @include media($mobile) {
+      left: 10px;
+    }
+  }
+}
+.owl-prev {
+  background: url('../images/svg/icon-prev.svg');
+  height: 30px;
+  width: 30px;
+  float: left;
+  margin-right: 10px;
+}
+.owl-next {
+  background: url('../images/svg/icon-next.svg');
+  height: 30px;
+  width: 30px; 
+  float: left; 
+}
+
 
 section#ourteam {
 
@@ -569,6 +613,10 @@ section#ourteam {
     font-family: 'Roboto', sans-serif;
     letter-spacing: 1px;
     padding-bottom: 13px;
+    @include media($mobile) {
+      font-size: 14px;
+      margin-right: 5px;
+    }
   }
   p {
     display: none;
@@ -694,7 +742,6 @@ section#donate {
 
 input[type="text"] {
   width: 330px;
-
   display: block;
   margin: auto;
   font-family: "Roboto", sans-serif;
@@ -710,6 +757,9 @@ input[type="text"] {
   -ms-border-radius: none;
   -o-border-radius: none;
   border-radius: none;
+  @include media($mobile) {
+    width: 260px;
+  }
 }
 input[type="text"]:focus {
   outline: none;
