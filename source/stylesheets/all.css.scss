@@ -163,7 +163,7 @@ section#header {
   height: 100vh;
   position: relative;
   @include media($medium-screen) {
-    background-attachment: scroll;
+    background-attachment: fixed;
     -webkit-background-size: cover;
   }
   @include media($mobile) {
@@ -295,7 +295,7 @@ section#theissue, section#thestigma, section#thesolution {
   background-size: cover;
   height: 100vh;
   @include media($medium-screen) {
-    background-attachment: scroll;
+    background-attachment: fixed;
     -webkit-background-size: cover;
   }
 }  
@@ -556,7 +556,7 @@ section#girlprofiles {
   height: 100vh;
   position: relative;
   @include media($medium-screen) {
-    background-attachment: scroll;
+    background-attachment: fixed;
 
   }
   .profile {

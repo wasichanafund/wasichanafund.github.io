@@ -407,7 +407,7 @@ section#header {
   @media screen and (min-width: 768px) and (max-width: 1024px) {
     /* line 159, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
     section#header {
-      background-attachment: scroll;
+      background-attachment: fixed;
       -webkit-background-size: cover; } }
 
 @media screen and (min-width: 1025px) {
@@ -558,7 +558,7 @@ section#theissue, section#thestigma, section#thesolution {
   @media screen and (min-width: 768px) and (max-width: 1024px) {
     /* line 294, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
     section#theissue, section#thestigma, section#thesolution {
-      background-attachment: scroll;
+      background-attachment: fixed;
       -webkit-background-size: cover; } }
 
 /* line 303, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
@@ -878,7 +878,7 @@ section#girlprofiles {
   @media screen and (min-width: 768px) and (max-width: 1024px) {
     /* line 553, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
     #abigael, #ngatia, #eucabeth {
-      background-attachment: scroll; } }
+      background-attachment: fixed; } }
   /* line 562, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
   #abigael .profile, #ngatia .profile, #eucabeth .profile {
     position: absolute;
