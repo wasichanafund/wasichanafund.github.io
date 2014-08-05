@@ -67,11 +67,13 @@ $(document).ready(function(){
     responsive: {
       0: {
         items: 1,
-        nav: false,
+        nav: true,
+        navText: false        
       },
       600:{
         items:1,
-        nav:true
+        nav:true,
+        navText: false        
       },
       1000:{
         items:1,

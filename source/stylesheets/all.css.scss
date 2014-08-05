@@ -7,7 +7,10 @@
 $mobile : new-breakpoint(max-width 767px);
 $medium-screen : new-breakpoint(min-width 768px max-width 1024px);
 $large-screen : new-breakpoint(min-width 1025px);
-
+$nexus-portrait : new-breakpoint(max-width 384px);
+$nexus-landscape : new-breakpoint(min-width 385px max-width 600px);
+$iphone-portrait : new-breakpoint(max-width 320px);
+$ipad-portrait : new-breakpoint(min-width 601px max-width 768px );
 
 * {
   outline: none;
@@ -171,6 +174,18 @@ header {
   @include media($medium-screen) {
     padding: 23rem 5rem;
   }
+  @include media($nexus-portrait) {
+    padding: 9rem 0.5rem;
+  }
+  @include media($iphone-portrait) {
+    padding: 0 0.5rem;
+  }
+  @include media($nexus-landscape){
+    padding: 1rem 0.5rem;
+  }
+  @include media($ipad-portrait) {
+    padding: 33rem 2rem;
+  }    
   h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
@@ -221,6 +236,9 @@ header {
     color: #183d6e;
     margin: 10px;
     padding: 0.5rem 5rem;
+    @include media($ipad-portrait) {
+      padding: 0.5rem 2rem;
+    }    
     @include media($mobile) {
       font-size: 14px;
       padding: 0;
@@ -249,6 +267,9 @@ section#theissue {
       font-size: 24px;
       line-height: 2em;
       margin-bottom: 2rem;
+      @include media($medium-screen) {
+        line-height: 1.5em;
+      }    
     }
     @include media($mobile) {
       h2 {
@@ -257,7 +278,7 @@ section#theissue {
       p {
         font-size: 16px;
       }  
-    }          
+    }       
   }
 }
 section#thestigma {
@@ -300,17 +321,20 @@ section#theissue, section#thestigma, section#thesolution {
       font-size: 16px;
     }  
   }
+  @include media($medium-screen) {
+    margin-top: 10rem;
+  }  
 }
 
 .video {
   margin: auto;
 
   @include media($large-screen) {
-    width: 75%;
+    width: 80%;
   }
   @include media($medium-screen) {
-    width: 60%;
-    height: 60%;
+    width: 75%;
+    height: 75%;
   }
   @include media($mobile) {
     display: none;
@@ -401,6 +425,15 @@ section#whatwedo {
         text-align: left;
       }
     }
+    @include media($medium-screen) {
+      img {
+        width: 175px;
+        height: 175px;
+      }
+      p {
+        font-size: 16px;
+      }      
+    }      
   }
 }
 
@@ -417,6 +450,9 @@ section#whatwedo {
     @include media($mobile) {
       visibility: hidden;
     }
+    @include media($medium-screen) {
+      visibility: hidden;
+    }    
   }  
 }
 
@@ -452,11 +488,13 @@ button.toggle {
 
 #timeline-container {
   display: none;
+  clear: both;
 }
 
 #howitworks {
   background-color: #f2f2f2;
-  overflow: auto;
+  height: 300px;
+  width: 100%;
 }
 
 .arrow-down {
@@ -547,6 +585,9 @@ section#girlprofiles {
       @include media($mobile) {
         font-size: 14px;
         margin: 10px;
+      }
+      @include media($iphone-portrait) {
+        line-height: 1.5em;
       }        
     } 
   }
@@ -564,6 +605,13 @@ section#girlprofiles {
     }
     @include media($mobile) {
       left: 10px;
+    }
+    @include media($nexus-portrait) {
+      left: 10px;
+      top: 92%;
+    }
+    @include media($ipad-portrait) {
+      top: 92%;
     }
   }
 }
@@ -638,6 +686,9 @@ section#ourteam {
     }
     @include media($mobile) {
       display: none;
+    }
+    @include media($ipad-portrait) {
+      top: 150px;
     }
   }  
 }
@@ -819,11 +870,17 @@ footer {
     li {
       display: inline;
       margin: 0 10px;
+      @include media($mobile) {
+        margin: 0;
+      }
       a {
         font-family: 'Roboto', sans-serif;
         font-weight: 300;
         font-size: 22px;
         color: #f9bb3f;
+        @include media($mobile) {
+          font-size: 18px;
+        }
         &:hover {
           color: #f9bb3f;
           text-decoration: none;
