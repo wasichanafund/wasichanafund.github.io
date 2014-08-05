@@ -1,0 +1,19 @@
+!!! 
+%html
+  %head
+    %title= current_page.data.title || "Wasichan Fund"
+    %meta{charset: "utf-8"}/
+    %meta{content: "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+    %meta{content: "width=device-width, initial-scale=1", name: "viewport"}/
+    %link{href: "http://fonts.googleapis.com/css?family=Roboto:400,300,700,100", rel: "stylesheet", type: "text/css"}
+    %link{href: "http://fonts.googleapis.com/css?family=Montserrat:400,700", rel: "stylesheet", type: "text/css"}
+    = stylesheet_link_tag "normalize", "all", "timeline"
+  %body{class: page_classes}
+    #wrapper
+      #sidebar
+        = partial "nav"
+      #content
+        = partial "nav-mobile" 
+        = yield
+
+    = javascript_include_tag "all"
