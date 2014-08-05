@@ -226,3 +226,23 @@ $(document).ready(function() {
   });
 });
 
+// $(document).ready(function() {
+//   resizeBg();
+// });
+
+// window.onresize = function(event) {
+//   resizeBg();
+// }
+
+// function resizeBg() {
+//   var vpw = $(window).width();
+//   var vph = $(window).height();
+//   if (vpw > 768 ) {
+//     $('.full-height').css({'height': vph + 'px'});    
+//   }
+//   else {
+//     $('img').removeClass('full-height');
+//     $('.why').removeClass('full-height');
+//   }
+// }
+
