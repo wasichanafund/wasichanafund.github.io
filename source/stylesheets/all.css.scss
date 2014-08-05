@@ -37,8 +37,6 @@ h1, h2, h3, h4, h5, h6 {
 
 #wrapper {
   overflow-x: hidden;
-  min-height: 100%;
-  width: 100%;
 }
 
 #sidebar {
@@ -164,6 +162,7 @@ section#header {
   position: relative;
   @include media($medium-screen) {
     -webkit-background-size: cover;
+    background-attachment: scroll;
   }
   @include media($mobile) {
 
@@ -295,6 +294,7 @@ section#theissue, section#thestigma, section#thesolution {
   height: 100vh;
   @include media($medium-screen) {
     -webkit-background-size: cover;
+    background-attachment: scroll;
   }
 }  
 
@@ -554,7 +554,8 @@ section#girlprofiles {
   height: 100vh;
   position: relative;
   @include media($medium-screen) {
-
+    background-attachment: scroll;
+    -webkit-background-size: cover;
   }
   .profile {
     position: absolute;
