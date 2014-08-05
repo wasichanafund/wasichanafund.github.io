@@ -1,5 +1,6 @@
 //= require jquery/dist/jquery.js
 //= require owl.carousel.min.js
+//= require magnific-popup/dist/jquery.magnific-popup.js
 //= require_tree .
 
 $(document).ready(function(){
@@ -80,3 +81,146 @@ $(document).ready(function(){
     }
   });
 });
+
+$(document).ready(function(){
+  $('.team-playa:first-child').magnificPopup({
+    items: {
+      src: '#jade',
+      type: 'inline',
+      modal: true
+    }
+  });
+  $('.team-playa:nth-child(2)').magnificPopup({
+    items: {
+      src: '#nelly',
+      type: 'inline',
+      modal: true
+    }
+  });
+  $('.team-playa:nth-child(3)').magnificPopup({
+    items: {
+      src: '#daniel',
+      type: 'inline',
+      modal: true
+    }
+  });  
+  $('.team-playa:nth-child(4)').magnificPopup({
+    items: {
+      src: '#charing',
+      type: 'inline',
+      modal: true
+    }
+  });
+  $('.team-playa:nth-child(5)').magnificPopup({
+    items: {
+      src: '#emily',
+      type: 'inline',
+      modal: true
+    }
+  });
+  $('.team-playa:nth-child(6)').magnificPopup({
+    items: {
+      src: '#jacob',
+      type: 'inline',
+      modal: true
+    }
+  });
+  $('.team-playa:nth-child(7)').magnificPopup({
+    items: {
+      src: '#rishi',
+      type: 'inline',
+      modal: true
+    }
+  });  
+  $('.team-playa:nth-child(8)').magnificPopup({
+    items: {
+      src: '#victor',
+      type: 'inline',
+      modal: true
+    }
+  });
+  $('.team-playa:nth-child(9)').magnificPopup({
+    items: {
+      src: '#sylvanna',
+      type: 'inline',
+      modal: true
+    }
+  });
+  $('.team-playa:nth-child(10)').magnificPopup({
+    items: {
+      src: '#jie',
+      type: 'inline',
+      modal: true
+    }
+  });
+  $('.team-playa:nth-child(11)').magnificPopup({
+    items: {
+      src: '#helene',
+      type: 'inline',
+      modal: true
+    }
+  });
+  $('.team-playa:nth-child(12)').magnificPopup({
+    items: {
+      src: '#emilyr',
+      type: 'inline',
+      modal: true
+    }
+  });
+  $('.team-playa:nth-child(13)').magnificPopup({
+    items: {
+      src: '#hannah',
+      type: 'inline',
+      modal: true
+    }
+  });                
+});
+
+
+
+
+$(document).ready(function() {
+  var donation = '.amount'
+  $(donation).on('click', function(){
+    $(donation).removeClass('donation');
+    $(this).addClass('donation');
+  });
+});
+
+$(document).ready(function(){
+
+  $(".amount:first-child").click(function() {
+    $(".your-donation p").html("Will provide one girl six months worth of sanitary napkins supply.");
+    $('input[name="amount"]').val("$25.00")
+  });
+  $(".amount:nth-child(2)").click(function() {
+    $(".your-donation p").html("Will provide one girl a year's worth of sanitary napkins supply, giving them a change to reclaim their dignity and transform communities.");
+    $('input[name="amount"]').val("$50.00")
+  });
+  $(".amount:nth-child(3)").click(function() {
+    $(".your-donation p").html("Will provide 50 girls access to health education that will equip each girl with the necessary skills to make informed life decisions.");
+    $('input[name="amount"]').val("$100.00")  
+  });
+  $(".amount:nth-child(4)").click(function() {
+    $(".your-donation p").html("Will help us support a new school by providing one month's supply of sanitary napkins to approximately 100 girls.");
+    $('input[name="amount"]').val("$250.00")  
+  });
+  $(".amount:nth-child(5)").click(function() {
+    $(".your-donation p").html("Will help expand the Wasichana Fund's reach to two schools, giving girls the change to win back six weeks of school each year.");
+    $('input[name="amount"]').val("$500.00")  
+  });   
+  $(".amount:nth-child(6)").click(function() {
+    $(".your-donation p").html("Enter the amount you wish to donate.");
+    $('input[name="amount"]').val("$CAD")  
+  });            
+});
+
+
+
+$(document).ready(function() {
+  $('label:contains("Amount")').each(function(){
+    $(this).html($(this).html().split("Amount").join(""));
+    $('input[name="amount"]').val("$CAD")
+  });
+});
+

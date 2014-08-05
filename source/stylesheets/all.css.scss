@@ -165,9 +165,10 @@ section#header {
 
 header {
   @include media($large-screen) {
-    @include span-columns(10);
-    @include shift(1);
-    padding-top: 30rem;
+    padding: 30rem 5rem;
+  }
+  @include media($medium-screen) {
+    padding: 20rem 5rem;
   }
   h1 {
     font-family: 'Montserrat', sans-serif;
@@ -175,6 +176,7 @@ header {
     font-size: 42px;
     color: #fff;
     text-transform: uppercase;
+    line-height: 1.3em;
     text-shadow: 0 1px 2px rgba(0,0,0,0.6);
     @include media($mobile) {
       font-size: 24px;
@@ -214,7 +216,7 @@ header {
     font-size: 24px;
     color: #183d6e;
     margin: 10px;
-    padding: 0.5em;
+    padding: 0.5rem 5rem;
     @include media($mobile) {
       font-size: 14px;
       padding: 0;
@@ -224,6 +226,35 @@ header {
 
 section#theissue {
   background: url('../images/issue-v2.jpg') no-repeat center top;
+  .issue-container {
+    @include span-columns(10);
+    @include shift(1);
+    text-align: center;
+    margin-top: 2rem;
+    h2 {
+      font-family: 'Montserrat', sans-serif;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+      color: #fff;
+      font-size: 36px;
+      padding: 2rem 0;
+    }
+    p {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      color: #fff;
+      font-size: 24px;
+      line-height: 2em;
+      margin-bottom: 2rem;
+    }
+    @include media($mobile) {
+      h2 {
+        font-size: 24px;
+      }
+      p {
+        font-size: 16px;
+      }  
+    }          
+  }
 }
 section#thestigma {
   background: url('../images/stigma.jpg') no-repeat center top;
@@ -234,29 +265,35 @@ section#thesolution {
 section#theissue, section#thestigma, section#thesolution {
   background-size: cover;
   height: 100vh;
-  display: table;
 }  
 
-section#theissue, section#thestigma, section#thesolution {
+.whypads-container {
+  text-align: center;
+  margin-top: 18rem;
+  position: relative;
+  @include span-columns(10);
+  @include shift(1);
   h2 {
     font-family: 'Montserrat', sans-serif;
     text-shadow: 0 1px 2px rgba(0,0,0,0.6);
     color: #fff;
+    font-size: 36px;
+    padding: 2rem 0;
   }
   p {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     color: #fff;
+    font-size: 24px;
+    line-height: 2em;
   }
   @include media($mobile) {
+    margin-top: 9rem;
     h2 {
       font-size: 24px;
-      margin: 0 0 20px 10px;
-      padding-top: 20px;
     }
     p {
       font-size: 16px;
-      margin: 10px;
     }  
   }
 }
@@ -265,7 +302,14 @@ section#theissue, section#thestigma, section#thesolution {
   margin: auto;
 
   @include media($large-screen) {
-    width: 50%;
+    width: 75%;
+  }
+  @include media($medium-screen) {
+    width: 60%;
+    height: 60%;
+  }
+  @include media($mobile) {
+    display: none;
   }
 }
 
@@ -283,15 +327,26 @@ iframe {
   height: 100%;
 }
 
+section#whatwedo {
+  overflow: auto;
+  @include media($mobile) {
+    overflow-x: hidden;
+  }
+}
+
 .section-head {
+  @include span-columns(10);
+  @include shift(1);
+  padding: 4rem 0 2rem 0;
   text-align: center;
   @include media($mobile) {
-
+    padding: 2rem 0;
   }
   h2 {
     font-family: 'Montserrat', sans-serif;
     color: #183d6e;
     text-transform: uppercase;
+    margin-bottom: 2rem;
     @include media($mobile) {
       font-size: 26px;
     }
@@ -301,8 +356,9 @@ iframe {
     font-weight: 300;
     color: #777;
     font-size: 24px;
+    line-height: 2em;
     @include media($mobile) {
-      font-size: 20px;
+      font-size: 18px;
       margin: 10px 10px 20px 10px;
     }  
   }
@@ -310,7 +366,11 @@ iframe {
 
 
 .badge-container {
-  @include outer-container;
+  @include span-columns(10);
+  @include shift(1);
+  img {
+    margin-bottom: 1rem;
+  }
   .badge {
     position: relative;
     text-align: center;
@@ -318,7 +378,9 @@ iframe {
     p {
       font-family: 'Roboto', sans-serif;
       font-weight: 300;
-      font-size: 16px;
+      font-size: 18px;
+      line-height: 2em;
+      color: #777;
     }      
     @include span-columns(4);
     @include omega(3n);
@@ -351,7 +413,16 @@ iframe {
   }  
 }
 
+.button-container {
+  @include span-columns(10);
+  @include shift(1);
+  text-align: center;
+  padding: 2rem 0 3rem 0;
+}
+
 button.toggle {
+  margin-left: auto;
+  margin-right: auto;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: 24px;
@@ -362,8 +433,14 @@ button.toggle {
   border-radius: 0;
   border: none;
   padding: 15px 0px;
-  width: 300px;
   text-shadow: none;
+  @include span-columns(4);
+  @include shift(4);
+  @include omega();
+  @include media($mobile) {
+    @include span-columns(12 of 12);
+    @include shift(0);
+  }
 } 
 
 #timeline-container {
@@ -372,7 +449,7 @@ button.toggle {
 
 #howitworks {
   background-color: #f2f2f2;
-  padding: 4rem 0;
+  overflow: auto;
 }
 
 .arrow-down {
@@ -424,6 +501,10 @@ button.toggle {
       bottom: 100px;
       left: 100px;      
     }
+    @include media($medium-screen) {
+      bottom: 50px;
+      left: 50px;      
+    }    
     @include span-columns(6);
     @include media($mobile) {
       @include span-columns(12 of 12);
@@ -445,6 +526,7 @@ button.toggle {
       font-family: 'Roboto', sans-serif;
       font-weight: 300;
       color: #fff;
+      font-size: 18px;
       @include media($large-screen) {
         line-height: 2em;
       }
@@ -456,21 +538,97 @@ button.toggle {
   }
 }
 
+section#ourteam {
 
+}
+
+
+#team-container {
+  @include outer-container;
+}
+
+#team-grid {
+  @include span-columns(10);
+  @include shift(1);
+}
+
+.team-playa {
+  @include span-columns(4);
+  @include omega(3n);
+  position: relative;
+  background-color: #f9bb3f;
+  margin-bottom: 20px;
+  cursor: pointer;
+  img.noiinteam {
+    width: 100%;
+  }
+  h4 {
+    font-size: 16px;
+    margin: 5px 0 0 5px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    padding-bottom: 13px;
+  }
+  p {
+    display: none;
+    margin-left: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #fff;
+    line-height: 1.5em;
+    font-size: 17px;
+  }
+  img.linkedin {
+    position: absolute;
+    top: 211px;
+    right: 7px;
+    height: 20px;
+    width: 20px;
+    @include media($medium-screen) {
+      top: 197px;
+    }
+    @include media($mobile) {
+      display: none;
+    }
+  }  
+}
+
+.white-popup {
+  position: relative;
+  background: #FFF;
+  padding: 20px;
+  width: auto;
+  max-width: 500px;
+  margin: 20px auto;
+  img { 
+    float: left;
+    width: 240px;
+    height: 168px;
+    margin-right: 10px; 
+  }
+  p {
+    font-family: 'Roboto', sans-serif;
+    line-height: 2em;
+  }
+}
 
 section#donate {
   background-color: #f2f2f2;
+  overflow: auto;
 }
 
 .amount-container {
-  @include span-columns(12);
+  @include span-columns(10);
+  @include shift(1);
+  @include omega();  
   .amount {
-    height: 150px; 
-    line-height: 150px;
+    height: 135px; 
+    line-height: 135px;
     background-color: #ccc;
     text-align: center;
     color: #fff;
-    font-size: 32px;
+    font-size: 28px;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     cursor: pointer;    
@@ -485,6 +643,115 @@ section#donate {
       margin-bottom: 10px;
     }
   }
+}
+
+.donation {
+  background-color: #f9bb3f !important;
+}
+
+.paypal-container {
+  @include span-columns(10);
+  @include shift(1);
+  .your-donation {
+    padding: 3rem 0 2rem 0;
+    @include span-columns(10);
+    @include shift(1);
+    text-align: center;
+    p {
+      font-size: 22px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      @include media($mobile) {
+        font-size: 16px;
+      }
+    }
+  }
+  .enter-amount {
+    button {
+      @include shift(4);
+    }
+  }  
+}
+
+.divider {
+  @include span-columns(10);
+  @include shift(1);
+  text-align: center;
+  h3 {
+    color: #666;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    margin: 4rem 0;    
+  }
+  hr { 
+    display: block; height: 1px;
+    border: 0; border-top: 1px solid #ccc;
+    margin: 1em 0; padding: 0;
+  }  
+}
+
+
+input[type="text"] {
+  width: 330px;
+
+  display: block;
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-border-radius: none;
+  -moz-border-radius: none;
+  -ms-border-radius: none;
+  -o-border-radius: none;
+  border-radius: none;
+}
+input[type="text"]:focus {
+  outline: none;
+}
+
+.style-4 input[type="text"] {
+  padding: 20px;
+  border: none;
+  border-bottom: solid 2px #c9c9c9;
+  -webkit-transition: border 0.3s;
+  -moz-transition: border 0.3s;
+  -o-transition: border 0.3s;
+  transition: border 0.3s;
+}
+.style-4 input[type="text"]:focus, .style-4 input[type="text"].focus {
+  border-bottom: solid 2px #969696;
+}
+
+/*------------------HACKY BUT TEMPORARY SOLUTION FOR PAYPAL BUTTON-----------------------------------------------------*/
+
+button.paypal-button {
+  @include span-columns(4);
+  font-family: 'Roboto', sans-serif !important;
+  font-weight: 100 !important;
+  font-size: 24px !important;
+  font-style: normal !important;
+  border-radius: 0 !important;
+  color: #fff !important;
+  background-color: #f9bb3f;
+  border: none;
+  padding: 15px 0px !important;
+  margin: 30px 0px 100px 0;
+  text-shadow: none !important;
+  background-image: none !important;
+  box-shadow: none;
+  border-radius: 0;
+}
+.paypal-button button:before {
+  background: none !important;
+}
+.paypal-button button:after {
+  background: none !important;
 }
 
 

@@ -4,6 +4,10 @@
       Donate
     %p
       Support us as we strive to empower young women in Kenya and facilitate an opportunity to redefine their future.
+  .divider
+    %hr
+    %h3
+      Select your donation
   .amount-container
     .amount
       $25
@@ -15,5 +19,12 @@
       $250
     .amount
       $500
-    .amount
+    .amount.donation
       Other
+
+  .paypal-container    
+    .your-donation
+      %p
+        Enter the amount you wish to donate.
+    .enter-amount.style-4
+      %script{async: "async", "data-amount-editable" => "$CAD", "data-button" => "donate", "data-currency" => "CAD", "data-env" => "sandbox", "data-name" => "Wasichana Fund", src: "https://www.paypalobjects.com/js/external/paypal-button.min.js?merchant=emily@wasichanafund.org"}
