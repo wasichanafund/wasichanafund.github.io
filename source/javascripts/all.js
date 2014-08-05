@@ -1,4 +1,5 @@
 //= require jquery/dist/jquery.js
+//= require owl.carousel.min.js
 //= require_tree .
 
 $(document).ready(function(){
@@ -55,5 +56,27 @@ $(document).ready(function() {
       });
     });
     $("body").animate({"scrollTop": div.offset().top}, 500);
+  });
+});
+
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel({
+    items: 1,
+    nav: true,
+    responsive: {
+      0: {
+        items: 1,
+        nav: false,
+      },
+      600:{
+        items:1,
+        nav:true
+      },
+      1000:{
+        items:1,
+        nav:true,
+        navText: false
+      }
+    }
   });
 });
