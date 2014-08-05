@@ -157,10 +157,11 @@ h1, h2, h3, h4, h5, h6 {
 section#header {
   background: url('../images/hero.jpg') no-repeat center top;
   background-size: cover;
+
   height: 100vh;
   position: relative;
   @include media($medium-screen) {
-
+    background-attachment: scroll;
   }
   @include media($mobile) {
 
@@ -290,6 +291,9 @@ section#thesolution {
 section#theissue, section#thestigma, section#thesolution {
   background-size: cover;
   height: 100vh;
+  @include media($medium-screen) {
+    background-attachment: scroll;
+  }
 }  
 
 .whypads-container {
@@ -546,6 +550,9 @@ section#girlprofiles {
   background-size: cover;
   height: 100vh;
   position: relative;
+  @include media($medium-screen) {
+    background-attachment: scroll;
+  }
   .profile {
     position: absolute;
     line-height: 2em;
