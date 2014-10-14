@@ -338,7 +338,7 @@ section#theissue, section#thestigma, section#thesolution {
   margin: auto;
 
   @include media($large-screen) {
-    width: 80%;
+    width: 75%;
   }
   @include media($medium-screen) {
     width: 75%;
@@ -369,6 +369,14 @@ section#whatwedo {
   @include media($mobile) {
 
   }
+}
+
+h3.current-initiatives {
+  color: #183d6e;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  margin: 4rem 0;    
 }
 
 .section-head {
