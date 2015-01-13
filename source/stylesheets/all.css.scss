@@ -377,6 +377,7 @@ h3.current-initiatives {
   font-size: 30px;
   font-weight: 400;
   margin: 4rem 0;    
+  clear:both;
 }
 
 .section-head {
@@ -736,6 +737,20 @@ section#ourteam {
 section#donate {
   background-color: #f2f2f2;
   overflow: auto;
+  .section-head .row {
+    @include span-columns(12);
+  }
+}
+
+.school-column {
+  margin: 2rem 0;
+  @include span-columns(4);
+  // text-align: left;
+  ul {
+    li {
+      margin-bottom: 20px;
+    }
+  }
 }
 
 .amount-container {
