@@ -1024,7 +1024,7 @@ section#girlprofiles {
   #team-grid:last-child {
     margin-right: 0; }
 
-/* line 669, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
+/* line 670, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
 .team-playa {
   float: left;
   display: block;
@@ -1043,10 +1043,10 @@ section#girlprofiles {
   /* line 83, /Users/Joseph/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/gems/2.0.0/gems/neat-1.7.1/app/assets/stylesheets/grid/_omega.scss */
   .team-playa:nth-child(3n+1) {
     clear: left; }
-  /* line 676, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
+  /* line 677, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
   .team-playa img.noiinteam {
     width: 100%; }
-  /* line 679, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
+  /* line 680, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
   .team-playa h4 {
     font-size: 16px;
     margin: 5px 0 0 5px;
@@ -1055,11 +1055,11 @@ section#girlprofiles {
     letter-spacing: 1px;
     padding-bottom: 13px; }
     @media screen and (max-width: 767px) {
-      /* line 679, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
+      /* line 680, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
       .team-playa h4 {
         font-size: 14px;
         margin-right: 5px; } }
-  /* line 691, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
+  /* line 692, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
   .team-playa p {
     display: none;
     margin-left: 10px;
@@ -1068,7 +1068,10 @@ section#girlprofiles {
     color: #fff;
     line-height: 1.5em;
     font-size: 17px; }
-  /* line 700, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
+  /* line 701, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
+  .team-playa a.linked {
+    z-index: 10000; }
+  /* line 704, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
   .team-playa img.linkedin {
     position: absolute;
     top: 211px;
@@ -1076,19 +1079,19 @@ section#girlprofiles {
     height: 20px;
     width: 20px; }
     @media screen and (min-width: 768px) and (max-width: 1024px) {
-      /* line 700, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
+      /* line 704, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
       .team-playa img.linkedin {
         top: 197px; } }
     @media screen and (max-width: 767px) {
-      /* line 700, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
+      /* line 704, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
       .team-playa img.linkedin {
         display: none; } }
     @media screen and (min-width: 601px) and (max-width: 768px) {
-      /* line 700, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
+      /* line 704, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
       .team-playa img.linkedin {
         top: 150px; } }
 
-/* line 718, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
+/* line 722, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
 .white-popup {
   position: relative;
   background: #FFF;
@@ -1096,22 +1099,22 @@ section#girlprofiles {
   width: auto;
   max-width: 500px;
   margin: 20px auto; }
-  /* line 725, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
+  /* line 729, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
   .white-popup img {
     float: left;
     width: 240px;
     height: 168px;
     margin-right: 10px; }
-  /* line 731, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
+  /* line 735, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
   .white-popup p {
     font-family: 'Roboto', sans-serif;
     line-height: 2em; }
 
-/* line 737, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
+/* line 741, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
 section#donate {
   background-color: #f2f2f2;
   overflow: auto; }
-  /* line 740, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
+  /* line 744, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
   section#donate .section-head .row {
     float: left;
     display: block;
@@ -1121,7 +1124,7 @@ section#donate {
     section#donate .section-head .row:last-child {
       margin-right: 0; }
 
-/* line 745, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
+/* line 749, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
 .school-column {
   margin: 2rem 0;
   float: left;
@@ -1131,11 +1134,11 @@ section#donate {
   /* line 87, /Users/Joseph/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/gems/2.0.0/gems/neat-1.7.1/app/assets/stylesheets/grid/_span-columns.scss */
   .school-column:last-child {
     margin-right: 0; }
-  /* line 750, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
+  /* line 754, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
   .school-column ul li {
     margin-bottom: 20px; }
 
-/* line 756, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
+/* line 760, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
 .amount-container {
   float: left;
   display: block;
@@ -1146,7 +1149,7 @@ section#donate {
   /* line 87, /Users/Joseph/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/gems/2.0.0/gems/neat-1.7.1/app/assets/stylesheets/grid/_span-columns.scss */
   .amount-container:last-child {
     margin-right: 0; }
-  /* line 760, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
+  /* line 764, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
   .amount-container .amount {
     height: 135px;
     line-height: 135px;
@@ -1171,7 +1174,7 @@ section#donate {
     .amount-container .amount:nth-child(6n+1) {
       clear: left; }
     @media screen and (max-width: 767px) {
-      /* line 760, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
+      /* line 764, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
       .amount-container .amount {
         float: left;
         display: block;
@@ -1191,11 +1194,11 @@ section#donate {
         .amount-container .amount:nth-child(3n+1) {
           clear: left; } }
 
-/* line 783, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
+/* line 787, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
 .donation {
   background-color: #f9bb3f !important; }
 
-/* line 787, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
+/* line 791, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
 .paypal-container {
   float: left;
   display: block;
@@ -1205,7 +1208,7 @@ section#donate {
   /* line 87, /Users/Joseph/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/gems/2.0.0/gems/neat-1.7.1/app/assets/stylesheets/grid/_span-columns.scss */
   .paypal-container:last-child {
     margin-right: 0; }
-  /* line 790, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
+  /* line 794, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
   .paypal-container .your-donation {
     padding: 3rem 0 2rem 0;
     float: left;
@@ -1217,20 +1220,20 @@ section#donate {
     /* line 87, /Users/Joseph/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/gems/2.0.0/gems/neat-1.7.1/app/assets/stylesheets/grid/_span-columns.scss */
     .paypal-container .your-donation:last-child {
       margin-right: 0; }
-    /* line 795, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
+    /* line 799, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
     .paypal-container .your-donation p {
       font-size: 22px;
       font-family: 'Roboto', sans-serif;
       font-weight: 300; }
       @media screen and (max-width: 767px) {
-        /* line 795, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
+        /* line 799, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
         .paypal-container .your-donation p {
           font-size: 16px; } }
-  /* line 805, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
+  /* line 809, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
   .paypal-container .enter-amount button {
     margin-left: 34.11922%; }
 
-/* line 811, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
+/* line 815, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
 .divider {
   float: left;
   display: block;
@@ -1241,14 +1244,14 @@ section#donate {
   /* line 87, /Users/Joseph/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/gems/2.0.0/gems/neat-1.7.1/app/assets/stylesheets/grid/_span-columns.scss */
   .divider:last-child {
     margin-right: 0; }
-  /* line 815, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
+  /* line 819, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
   .divider h3 {
     color: #666;
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
     font-weight: 300;
     margin: 4rem 0; }
-  /* line 822, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
+  /* line 826, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
   .divider hr {
     display: block;
     height: 1px;
@@ -1257,7 +1260,7 @@ section#donate {
     margin: 1em 0;
     padding: 0; }
 
-/* line 830, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
+/* line 834, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
 input[type="text"] {
   width: 330px;
   display: block;
@@ -1276,15 +1279,15 @@ input[type="text"] {
   -o-border-radius: none;
   border-radius: none; }
   @media screen and (max-width: 767px) {
-    /* line 830, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
+    /* line 834, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
     input[type="text"] {
       width: 260px; } }
 
-/* line 851, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
+/* line 855, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
 input[type="text"]:focus {
   outline: none; }
 
-/* line 855, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
+/* line 859, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
 .style-4 input[type="text"] {
   padding: 20px;
   border: none;
@@ -1294,12 +1297,12 @@ input[type="text"]:focus {
   -o-transition: border 0.3s;
   transition: border 0.3s; }
 
-/* line 864, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
+/* line 868, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
 .style-4 input[type="text"]:focus, .style-4 input[type="text"].focus {
   border-bottom: solid 2px #969696; }
 
 /*------------------HACKY BUT TEMPORARY SOLUTION FOR PAYPAL BUTTON-----------------------------------------------------*/
-/* line 870, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
+/* line 874, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
 button.paypal-button {
   float: left;
   display: block;
@@ -1323,49 +1326,49 @@ button.paypal-button {
   button.paypal-button:last-child {
     margin-right: 0; }
 
-/* line 887, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
+/* line 891, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
 .paypal-button button:before {
   background: none !important; }
 
-/* line 890, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
+/* line 894, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
 .paypal-button button:after {
   background: none !important; }
 
-/* line 896, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
+/* line 900, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
 footer {
   height: 175px;
   width: 100%;
   background-color: #1e1f24;
   text-align: center;
   display: table; }
-  /* line 902, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
+  /* line 906, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
   footer ul {
     list-style: none;
     display: table-cell;
     vertical-align: middle; }
-    /* line 906, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
+    /* line 910, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
     footer ul li {
       display: inline;
       margin: 0 10px; }
       @media screen and (max-width: 767px) {
-        /* line 906, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
+        /* line 910, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
         footer ul li {
           margin: 0; } }
-      /* line 912, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
+      /* line 916, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
       footer ul li a {
         font-family: 'Roboto', sans-serif;
         font-weight: 300;
         font-size: 22px;
         color: #f9bb3f; }
         @media screen and (max-width: 767px) {
-          /* line 912, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
+          /* line 916, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
           footer ul li a {
             font-size: 18px; } }
-        /* line 920, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
+        /* line 924, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
         footer ul li a:hover {
           color: #f9bb3f;
           text-decoration: none; }
-      /* line 925, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
+      /* line 929, /Users/Joseph/wasichanafund.github.io/source/stylesheets/all.css.scss */
       footer ul li span {
         font-family: 'Roboto', sans-serif;
         font-weight: 100;
