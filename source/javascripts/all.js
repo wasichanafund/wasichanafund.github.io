@@ -85,91 +85,84 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-  $('.team-playa:first-child').magnificPopup({
+  $('.jade').magnificPopup({
     items: {
       src: '#jade',
       type: 'inline',
       modal: true
     }
   });
-  $('.team-playa:nth-child(2)').magnificPopup({
+  $('.nelly').magnificPopup({
     items: {
       src: '#nelly',
       type: 'inline',
       modal: true
     }
   });
-  $('.team-playa:nth-child(3)').magnificPopup({
+  $('.daniel').magnificPopup({
     items: {
       src: '#daniel',
       type: 'inline',
       modal: true
     }
   });  
-  $('.team-playa:nth-child(4)').magnificPopup({
+  $('.charing').magnificPopup({
     items: {
       src: '#charing',
       type: 'inline',
       modal: true
     }
   });
-  $('.team-playa:nth-child(5)').magnificPopup({
+  $('.emily').magnificPopup({
     items: {
       src: '#emily',
       type: 'inline',
       modal: true
     }
   });
-  $('.team-playa:nth-child(6)').magnificPopup({
+  $('.jacob').magnificPopup({
     items: {
       src: '#jacob',
       type: 'inline',
       modal: true
     }
   });
-  $('.team-playa:nth-child(7)').magnificPopup({
+  $('.rishi').magnificPopup({
     items: {
       src: '#rishi',
       type: 'inline',
       modal: true
     }
   });  
-  $('.team-playa:nth-child(8)').magnificPopup({
+  $('.victor').magnificPopup({
     items: {
       src: '#victor',
       type: 'inline',
       modal: true
     }
   });
-  $('.team-playa:nth-child(9)').magnificPopup({
+  $('.sylvanna').magnificPopup({
     items: {
       src: '#sylvanna',
       type: 'inline',
       modal: true
     }
   });
-  $('.team-playa:nth-child(10)').magnificPopup({
-    items: {
-      src: '#jie',
-      type: 'inline',
-      modal: true
-    }
-  });
-  $('.team-playa:nth-child(11)').magnificPopup({
+  $('.helene').magnificPopup({
     items: {
       src: '#helene',
       type: 'inline',
       modal: true
     }
   });
-  $('.team-playa:nth-child(12)').magnificPopup({
+  $('.emilyr').magnificPopup({
     items: {
       src: '#emilyr',
       type: 'inline',
       modal: true
     }
   });
-  $('.team-playa:nth-child(13)').magnificPopup({
+  $('.hannah').magnificPopup({
     items: {
       src: '#hannah',
       type: 'inline',

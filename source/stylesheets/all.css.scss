@@ -666,6 +666,7 @@ section#ourteam {
   @include shift(1);
 }
 
+
 .team-playa {
   @include span-columns(4);
   @include omega(3n);
@@ -696,6 +697,9 @@ section#ourteam {
     color: #fff;
     line-height: 1.5em;
     font-size: 17px;
+  }
+  a.linked {
+    z-index:10000;
   }
   img.linkedin {
     position: absolute;
